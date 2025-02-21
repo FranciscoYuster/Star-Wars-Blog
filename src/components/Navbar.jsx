@@ -44,14 +44,14 @@ const Navbar = () => {
             <input
               className="form-control me-2"
               type="search"
-              placeholder="Buscar..."
+              placeholder="Search..."
               aria-label="Search"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               style={{ backgroundColor: '#333333', color: '#ffffff', borderColor: '#FFD700' }}
             />
             <button className="btn btn-outline-warning" type="submit">
-              Buscar
+            Search
             </button>
           </form>
           <div className="dropdown">

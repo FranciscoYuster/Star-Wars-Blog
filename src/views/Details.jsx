@@ -54,7 +54,7 @@ const Details = () => {
     return <div className="container mt-4 text-center text-white">Error al cargar los detalles: {error}</div>;
   }
   if (!details) {
-    return <div className="container mt-4 text-center text-white">Cargando...</div>;
+    return <div className="container mt-4 text-center text-white">Loading...</div>;
   }
 
   // Usamos el título si es film, o el nombre para otros recursos
@@ -199,14 +199,14 @@ const Details = () => {
                       backgroundColor: 'transparent',
                       borderBottom: '1px solid #FFD700'
                     }}>
-                      <strong>{key}:</strong> {renderValue(key, value)}
+                      {key}: {renderValue(key, value)}
                     </li>
                   ))}
               </ul>
             </div>
             <div className="text-end m-3 mt-3">
               <Link to="/" className="btn btn-warning" style={{ fontFamily: '"Star Jedi", sans-serif' }}>
-                Regresar
+                Back
               </Link>
             </div>
           </div>

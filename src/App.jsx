@@ -7,8 +7,14 @@ import AppRoutes from './routes/Routes';
 const App = () => {
   return (
     <StarwarsProvider>
-        <Navbar />
-        <AppRoutes />
+      <Navbar />
+      <AppRoutes />
+      <footer 
+        className="text-center p-3" 
+        style={{ backgroundColor: '#000000', color: '#ffffff' }}
+      >
+        Developed by Francisco Yuster
+      </footer>
     </StarwarsProvider>
   );
 };
