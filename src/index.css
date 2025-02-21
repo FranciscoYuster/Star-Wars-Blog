@@ -1,0 +1,43 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* En tu archivo CSS global, por ejemplo, index.css o App.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Opcional: para que toda la página tenga fondo negro */
+    font-family: 'starJedi';
+  }
+
+
+
+  @font-face {
+    font-family: 'starJedi';
+    src: url('./assets/fonts/Starjedi.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Contenedor que permite scroll horizontal para cada categoría */
+.category-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* Opcional: agregar un padding inferior para evitar que el scroll tape contenido */
+  padding-bottom: 1rem;
+}
+
+/* Envuelve las dos filas para que se desplacen juntas */
+.scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cada fila se muestra como un contenedor flex sin wrap */
+.row-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
